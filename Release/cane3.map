@@ -1,0 +1,62 @@
+Optimizing Linkage Editor (V.10.02.01.000)        20-Oct-2018 22:43:58
+
+*** Options ***
+
+-subcommand=LinkerSubCommand.tmp
+-input="./src/init_stack.obj"
+-input="./src/cane.obj"
+-input="./src/dbsct.obj"
+-input="./src/function.obj"
+-input="./src/global.obj"
+-input="./src/init.obj"
+-input="./src/interrupt_handlers.obj"
+-input="./src/mtu.obj"
+-input="./src/pfc.obj"
+-input="./src/reset_program.obj"
+-input="./src/run.obj"
+-input="./src/sbrk.obj"
+-input="./src/sensor.obj"
+-input="./src/serial.obj"
+-input="./src/vector_table.obj"
+-input="./src/wall.obj"
+-start=DVECTTBL,DINTTBL,PIntPRG/0,PResetPRG/0800,P,C,C$BSEC,C$DSEC,D/01000,B,R/0FFFFA000,S/0FFFFBC00
+-library=C:\Users\ilove\E2_STU~1\CANEWO~3\cane3\Release\cane3.lib
+-noprelink
+-list=cane3.map
+-nooptimize
+-nodebug
+-output=C:\Users\ilove\e2_studio\caneworkspace3\cane3\Release\cane3.abs
+-rom=D=R
+-nomessage
+-nologo
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+DVECTTBL
+                                  00000000  0000000f        10   4
+DINTTBL
+                                  00000010  000003ff       3f0   4
+PIntPRG
+                                  00000400  000005ef       1f0   4
+PResetPRG
+                                  00000800  0000082f        30   4
+P
+                                  00001000  000087ed      77ee   4
+C
+                                  000087f0  00008b7b       38c   4
+C$BSEC
+                                  00008b7c  00008b83         8   4
+C$DSEC
+                                  00008b84  00008b8f         c   4
+D
+                                  00008b90  00008bcb        3c   4
+B
+                                  ffffa000  ffffa7df       7e0   4
+R
+                                  ffffa7e0  ffffa81b        3c   4
+S
+                                  ffffbc00  ffffbfff       400   4

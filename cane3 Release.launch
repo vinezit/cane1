@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.renesas.cdt.launch.debug.launchConfigurationType">
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Release\cane3.x"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="cane3"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="%com.renesas.cdt.shc.release.win32.configuration.Id.840197096"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/cane3"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+</launchConfiguration>
