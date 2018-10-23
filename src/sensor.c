@@ -12,6 +12,7 @@
 #include "function.h"
 #include "mtu.h"
 #include "sensor.h"
+
 void initAD(void) {
 	STB.CR4.BIT._AD0 = 0;	//AD0設定
 	AD0.ADCR.BIT.ADST = 0;
